@@ -20,21 +20,58 @@ export default function Home() {
           <TextField
             required
             id='outlined-required'
-            label='Required'
+            label='First Name'
             defaultValue='Hello World'
             color='success'
           />
           <TextField
-            disabled
+            required
+            id='outlined-required'
+            label='Last Name'
+            defaultValue='Hello World'
+            color='success'
+          />
+          <TextField
+            required
+            id='outlined-required'
+            label='e-mail'
+            defaultValue='Hello World'
+            color='success'
+          />
+          <TextField
+            required
+            id='outlined-required'
+            label='Street address'
+            defaultValue='Hello World'
+            color='success'
+          />
+          <TextField
+            required
+            id='outlined-required'
+            label='Street address'
+            defaultValue='Hello World'
+            color='success'
+            type='number'
+          />
+          <TextField
+            required
+            id='outlined-required'
+            label='Phone number'
+            defaultValue='Hello World'
+            color='success'
+            type='tel'
+          />
+          <TextField
             id='outlined-disabled'
             label='Disabled'
+            type='text'
             defaultValue='Hello World'
             color='success'
           />
           <TextField
             id='outlined-password-input'
             label='Password'
-            type='password'
+            type='text'
             autoComplete='current-password'
             color='success'
           />
