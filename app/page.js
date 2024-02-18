@@ -9,47 +9,40 @@ export default function Home() {
   return (
     <>
       <Box>
-        {/* <FormGroup>
-          <FormControlLabel
-            control={<Switch defaultChecked />}
-            label='Charges'
-          />
-          <FormControlLabel label='Checkouts' />
-        </FormGroup> */}
         <div>
           <TextField
             required
             id='outlined-required'
             label='First Name'
-            defaultValue='Hello World'
+            defaultValue='Satoshi'
             color='success'
           />
           <TextField
             required
             id='outlined-required'
             label='Last Name'
-            defaultValue='Hello World'
+            defaultValue='Nakamoto'
             color='success'
           />
           <TextField
             required
             id='outlined-required'
             label='e-mail'
-            defaultValue='Hello World'
+            defaultValue='satoshi@bitcoin.com'
             color='success'
           />
           <TextField
             required
             id='outlined-required'
             label='Street address'
-            defaultValue='Hello World'
+            defaultValue='21 Milly Sats Street'
             color='success'
           />
           <TextField
             required
             id='outlined-required'
-            label='Street address'
-            defaultValue='Hello World'
+            label='Zipcode'
+            defaultValue='21212'
             color='success'
             type='number'
           />
@@ -60,20 +53,6 @@ export default function Home() {
             defaultValue='Hello World'
             color='success'
             type='tel'
-          />
-          <TextField
-            id='outlined-disabled'
-            label='Disabled'
-            type='text'
-            defaultValue='Hello World'
-            color='success'
-          />
-          <TextField
-            id='outlined-password-input'
-            label='Password'
-            type='text'
-            autoComplete='current-password'
-            color='success'
           />
         </div>
         <Button variant='contained'>Hello world</Button>
