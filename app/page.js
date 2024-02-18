@@ -55,7 +55,7 @@ export default function Home() {
             type='tel'
           />
         </div>
-        <Button variant='contained'>Hello world</Button>
+        <Button variant='contained'>Create charge</Button>
       </Box>
     </>
   );
