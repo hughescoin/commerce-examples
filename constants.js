@@ -1,9 +1,6 @@
-//const appId = '';
-//site: https://cb-commerce.uc.r.appspot.com/
-
 export const destWallets = [
   {
-    address: process.env.EVM_ADDR_1,
+    address: process.env.NEXT_PUBLIC_EVM_ADDR_1,
     //blockchains: ['ethereum', 'avalanche-c-chain'], //ethereum, avalanche-c-chain, solana today
     assets: ['ETH', 'USDC', 'MATIC'], //can also limit to specific asset
     blockchains: ['polygon'],
@@ -11,7 +8,7 @@ export const destWallets = [
 ];
 
 export const generateOnRampConfig = {
-  appId: 'b73fc90c-f160-407e-ab0c-f40ae18aab37',
+  appId: process.env.NEXT_PUBLIC_APP_ID,
   host: 'https://pay.coinbase.com',
   destinationWallets: destWallets,
   defaultNetwork: 'polygon',
