@@ -11,6 +11,7 @@ import { WalletConnectConnector } from '@web3-react/walletconnect-connector';
 import { InjectedConnector } from '@web3-react/injected-connector';
 import GenerateOnRampButton from './components/pay-button';
 import InitOnRampButton from './components/init';
+import IKB from './components/ikb-init';
 
 const CoinbaseWallet = new WalletLinkConnector({
   url: `${process.env.ALCHEMY_BASE_MAINNET}`,
@@ -121,6 +122,10 @@ export default function Home() {
         <h2>initOnRamp</h2>
         <a id='"cbpay-button-container'>
           <InitOnRampButton />
+        </a>
+        <h2>IKB</h2>
+        <a id='"cbpay-button-container'>
+          <IKB />
         </a>
       </div>
       <Box sx={{ pt: 4, pl: 4 }} className='border border-green-950	'>
