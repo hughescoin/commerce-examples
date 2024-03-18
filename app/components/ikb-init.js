@@ -3,7 +3,7 @@ import Image from 'next/image';
 import compactBuyButton from '../../public/compactBuy.png';
 import { initOnRampConfig } from '../../constants';
 import { useMemo, useRef, useState, useEffect } from 'react';
-import { destWallets } from '../../constants';
+import { ikbWallets } from '../../constants';
 
 export default function IKB() {
   const [isReady, setIsReady] = useState(false);
@@ -16,14 +16,7 @@ export default function IKB() {
       appId: process.env.NEXT_PUBLIC_APP_ID,
       target: '#cbpay-container',
       widgetParameters: {
-        destinationWallets: [
-          {
-            address: destWallets,
-            assets: ['usdc'],
-            blockchains: ['base'],
-            supportedNetworks: ['base'],
-          },
-        ],
+        destinationWallets: ikbWallets,
         presetCryptoAmount: amount,
         partnerUserId: userId,
         defaultExperience: 'buy',
