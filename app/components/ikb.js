@@ -7,8 +7,6 @@ import { ikbWallets } from '../../constants';
 
 export default function IKB() {
   const [isReady, setIsReady] = useState(false);
-  const amount = 10;
-  const userId = 796;
   const onrampInstance = useRef();
 
   const widgetOptions = useMemo(
@@ -18,8 +16,6 @@ export default function IKB() {
       target: '#cbpay-container',
       widgetParameters: {
         destinationWallets: ikbWallets,
-        presetCryptoAmount: amount,
-        partnerUserId: userId,
         defaultExperience: 'buy',
       },
       onSuccess: () => console.log('success'),
@@ -33,7 +29,7 @@ export default function IKB() {
       closeOnExit: true,
       closeOnSuccess: true,
     }),
-    [amount]
+    []
   );
 
   useEffect(() => {

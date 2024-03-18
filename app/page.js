@@ -43,6 +43,10 @@ export default function Home() {
         <a id='cbpay-container'>
           <IKB />
         </a>
+        <h2>IKB simple</h2>
+        <a id='cbpay-container'>
+          <IKB />
+        </a>
       </div>
       <Box sx={{ pt: 4, pl: 4 }} className='border border-green-950	'>
         {/*{ flexGrow: 1 } */}
