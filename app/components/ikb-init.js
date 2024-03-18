@@ -50,4 +50,14 @@ export default function IKB() {
       }
     });
   }, [widgetOptions]);
+
+  const handleClick = () => {
+    onrampInstance.current?.open();
+  };
+
+  return (
+    <button onClick={handleClick} disabled={!isReady}>
+      <Image src={compactBuyButton} alt='buy button' />
+    </button>
+  );
 }
