@@ -40,7 +40,7 @@ export default function Home() {
           <InitOnRampButton />
         </a>
         <h2>IKB</h2>
-        <a id='cbpay-button-container'>
+        <a id='cbpay-container'>
           <IKB />
         </a>
       </div>
