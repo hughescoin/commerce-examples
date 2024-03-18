@@ -3,7 +3,7 @@ import Image from 'next/image';
 import compactBuyButton from '../../public/compactBuy.png';
 import { initOnRampConfig } from '../../constants';
 import { useMemo, useRef, useState } from 'react';
-import destWallets from '../../constants';
+import { destWallets } from '../../constants';
 
 export default function IKB() {
   const [isReady, setIsReady] = useState(false);
