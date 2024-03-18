@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useStateq } from 'react';
+//import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -9,10 +9,6 @@ import SendIcon from '@mui/icons-material/Send';
 import { WalletLinkConnector } from '@web3-react/walletlink-connector';
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector';
 import { InjectedConnector } from '@web3-react/injected-connector';
-import { useWeb3React } from '@web3-react/core';
-import { networkParams } from './networks';
-import { connectors } from './connectors';
-import { toHex, truncateAddress } from './utils';
 import GenerateOnRampButton from './components/pay-button';
 import InitOnRampButton from './components/init';
 
