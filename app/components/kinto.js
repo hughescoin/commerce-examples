@@ -29,7 +29,7 @@ export default function KintoPayButton() {
     }
 
     initOnRamp(options, (error, instance) => {
-      if (instance && onrampInstance.current) {
+      if (instance) {
         onrampInstance.current = instance;
         setIsReady(true);
       }
