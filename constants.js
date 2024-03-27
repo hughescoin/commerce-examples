@@ -25,7 +25,7 @@ export const generateOnRampConfig = {
 };
 
 export const initOnRampConfig = {
-  appId: process.env.APP_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
   experienceLoggedIn: 'popup',
   experienceLoggedOut: 'popup',
   //host: 'https://pay.coinbase.com',
