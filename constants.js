@@ -36,7 +36,7 @@ export const initOnRampConfig = {
   widgetParameters: {
     destinationWallets: [
       {
-        address: process.env.EVM_ADDR_1,
+        address: process.env.NEXT_PUBLIC_EVM_ADDR_1,
         blockchains: ['polygon', 'ethereum'],
       },
     ],
