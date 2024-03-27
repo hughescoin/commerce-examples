@@ -21,9 +21,9 @@ export default function Home() {
           <InitOnRampButton />
         </a>
         <h2>Kinto</h2>
-        <a id='cbpay-container'>
+        {/* <a id='cbpay-container'>
           <KintoPayButton />
-        </a>
+        </a> */}
       </div>
       <Box sx={{ pt: 4, pl: 4 }} className='border border-green-950	'>
         {/*{ flexGrow: 1 } */}
