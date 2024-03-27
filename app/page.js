@@ -25,64 +25,66 @@ export default function Home() {
           <KintoPayButton />
         </a>
       </div>
-      <Box sx={{ pt: 4, pl: 4 }} className='border border-green-950	'>
-        {/*{ flexGrow: 1 } */}
-        <Grid container space={2}>
-          <Grid item xs={6} className='border border-red-500'>
-            <TextField
-              required
-              id='outlined-required'
-              label='First Name'
-              defaultValue='Satoshi'
-              color='success'
-            />
-            <TextField
-              required
-              id='outlined-required'
-              label='Last Name'
-              defaultValue='Nakamoto'
-              color='success'
-            />
-            <TextField
-              required
-              id='outlined-required'
-              label='e-mail'
-              defaultValue='satoshi@bitcoin.com'
-              color='success'
-            />
-            <TextField
-              required
-              id='outlined-required'
-              label='Street address'
-              defaultValue='21 Milly Sats Street'
-              color='success'
-            />
-            <TextField
-              required
-              id='outlined-required'
-              label='Zipcode'
-              defaultValue='21212'
-              color='success'
-              type='number'
-            />
-            <TextField
-              required
-              id='outlined-required'
-              label='Phone number'
-              defaultValue='212-212-1232'
-              color='success'
-              type='tel'
-            />
-          </Grid>
-        </Grid>
-        <Button
-          sx={{ bgcolor: '#1976d2', mt: 2 }}
-          variant='contained'
-          endIcon={<SendIcon />}
-        >
-          Create charge
-        </Button>
-      </Box>
     </>
   );
+}
+
+{
+  /* 
+
+import { destWallets } from '../../constants';
+import { initOnRamp } from '@coinbase/cbpay-js';
+import { useRef, useState, useEffect } from 'react';
+
+export default function KintoPayButton() {
+  const [isReady, setIsReady] = useState(false);
+  const onrampInstance = useRef(undefined);
+
+  useEffect(() => {
+    const options = {
+      appId: 'REPLACE',
+      target: '#cbpay-container',
+      widgetParameters: {
+        presetFiatAmount: 1000,
+        defaultExperience: 'buy',
+        destinationWallets: destWallets,
+      },
+      onSuccess: () => {},
+      onExit: () => {},
+      onEvent: (event) => {
+        // event stream
+      },
+      experienceLoggedIn: 'popup',
+      experienceLoggedOut: 'popup',
+    };
+
+    if (onrampInstance.current) {
+      onrampInstance.current.destroy();
+    }
+
+    initOnRamp(options, (error, instance) => {
+      if (instance && onrampInstance.current) {
+        onrampInstance.current = instance;
+        setIsReady(true);
+      }
+    });
+  }, []);
+
+  const handleOnPress = () => {
+    if (onrampInstance.current) {
+      onrampInstance.current.open();
+    }
+  };
+
+  return (
+    <div id='cbpay-container'>
+      <button onClick={handleOnPress} disabled={!isReady}>
+        Pay with Coinbase
+      </button>
+    </div>
+  );
+}
+
+
+*/
 }
