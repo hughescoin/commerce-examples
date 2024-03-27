@@ -6,28 +6,9 @@ import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import SendIcon from '@mui/icons-material/Send';
 
-import { WalletLinkConnector } from '@web3-react/walletlink-connector';
-import { WalletConnectConnector } from '@web3-react/walletconnect-connector';
-import { InjectedConnector } from '@web3-react/injected-connector';
 import GenerateOnRampButton from './components/pay-button';
 import InitOnRampButton from './components/init';
-import IKB from './components/ikb-init';
-
-const CoinbaseWallet = new WalletLinkConnector({
-  url: `${process.env.ALCHEMY_BASE_MAINNET}`,
-  appName: 'phcbsa',
-  supportedChainIds: [1, 3, 4, 5, 42],
-});
-
-const WalletConnect = new WalletConnectConnector({
-  rpcUrl: `${process.env.ALCHEMY_BASE_MAINNET}`,
-  bridge: 'https://bridge.walletconnect.org',
-  qrcode: true,
-});
-
-const Injected = new InjectedConnector({
-  supportedChainIds: [1, 3, 4, 5, 42],
-});
+import KintoPayButton from './components/kinto';
 
 export default function Home() {
   return (
@@ -39,13 +20,9 @@ export default function Home() {
         <a id='cbpay-button-container'>
           <InitOnRampButton />
         </a>
-        <h2>IKB</h2>
+        <h2>Kinto</h2>
         <a id='cbpay-container'>
-          <IKB />
-        </a>
-        <h2>IKB simple</h2>
-        <a id='cbpay-container'>
-          <IKB />
+          <KintoPayButton />
         </a>
       </div>
       <Box sx={{ pt: 4, pl: 4 }} className='border border-green-950	'>
