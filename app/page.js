@@ -16,10 +16,10 @@ export default function Home() {
       <div>
         <h2>GenerateOnRamp</h2>
         <GenerateOnRampButton />
-        <h2>initOnRamp</h2>
+        {/* <h2>initOnRamp (mine)</h2>
         <a id='cbpay-button-container'>
           <InitOnRampButton />
-        </a>
+        </a> */}
         <h2>Kinto</h2>
         <a id='cbpay-container'>
           <KintoPayButton />
