@@ -16,14 +16,14 @@ export default function Home() {
       <div>
         <h2>GenerateOnRamp</h2>
         <GenerateOnRampButton />
-        {/* <h2>initOnRamp (mine)</h2>
+        <h2>initOnRamp (mine)</h2>
         <a id='cbpay-button-container'>
           <InitOnRampButton />
-        </a> */}
-        <h2>Kinto</h2>
+        </a>
+        {/* <h2>Kinto</h2>
         <a id='cbpay-container'>
           <KintoPayButton />
-        </a>
+        </a> */}
       </div>
     </>
   );
