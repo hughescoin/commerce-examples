@@ -6,14 +6,14 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function InitOnRampButton() {
   const [isReady, setIsReady] = useState(false);
-  const onrampInstance = useRef(); //reference a value not needed for rendering //access DOM nodes inside components
+  const onrampInstance = useRef();
 
   useEffect(() => {
     onrampInstance.current = initOnRamp(
       {
         ...initOnRampConfig,
         onReady: () => {
-          setIsReady(true); //might not need this
+          setIsReady(true);
         },
         onSuccess: () => {
           console.log('success');
